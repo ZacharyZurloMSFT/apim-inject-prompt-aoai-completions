@@ -20,7 +20,7 @@ from openai import OpenAI, APIConnectionError, APIStatusError, OpenAIError
 load_dotenv()
 
 BASE_URL = os.getenv(
-    "APIM_BASE_URL", "https://apim-zurlo.azure-api.net/aoaiv1/openai/v1"
+    "APIM_BASE_URL", "APIM_BASE_URL"
 )
 MODEL = os.getenv("MODEL", "gpt-4o")
 # APIM has auth disabled, but the OpenAI SDK requires a non-empty api_key.
